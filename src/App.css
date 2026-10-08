@@ -1,0 +1,425 @@
+/*======================
+Paleta de Colores
+=======================*/
+:root {
+    --yellow: #eed622;
+    --turquoise: #07a2a4;
+    --green: #317a6d;
+    --dark: #1e1e1e;
+    --gray: #a6a6a6;
+    
+}
+body{
+    background: var(--dark)
+}
+
+/*======================
+Estilos de Navbar
+=======================*/
+.navbar{
+    background: #07a1a400;
+    transition: ease-in-out 1s;
+}
+.navbar.nav-abajo{
+    background: var(--dark);
+}
+
+.navbar-nav a,
+.navbar-nav .anchor {
+    color: var(--gray);
+    font-family: 'Roboto Condensed Variable';
+    font-weight: 500;
+  
+}
+
+.navbar-nav a:hover {
+    color: var(--yellow);
+}
+
+/*======================
+Estilos de Header
+=======================*/
+header {
+    background: #646262;
+    background: radial-gradient(circle, rgba(100, 98, 98, 1) 0%, #4b4a4a 0%, #222222 46%, rgba(0, 0, 0, 1) 100%);
+    text-transform: uppercase;
+}
+
+header .text-center {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+header .text-center.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+header .logo {
+    width: 30vh;
+   
+}
+
+header .text-gradiant {
+    background-image: linear-gradient(to right, var(--turquoise) 19%, var(--yellow) 19%,var(--yellow) 70%, var(--turquoise) 100%);
+    background-clip: text;
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-position: left center;
+    -webkit-text-fill-color: transparent;
+    font-size: 8vw;
+    font-family: 'Roboto Condensed Variable';
+    font-weight: 500;
+    animation: moverGradiante 3.5s linear;
+    animation-delay: .5s;
+    
+    
+}
+@keyframes moverGradiante {
+    0% {background-position: 0% 50%;}
+    100% { background-position: 200% 50%; }
+    
+}
+
+header .bttnDownload{
+    background-color: #a6a6a635;
+    color: var(--turquoise);
+    padding: 4px 12px;
+    font-size: 2vw;
+    font-family:'Roboto Condensed Variable' ;
+    border-radius: 5px;
+    border: solid 1px var(--turquoise);
+    font-weight: 300;
+    transition: ease-in-out .5s;
+    
+}
+
+
+
+header .bttnDownload:hover{
+    color: var(--yellow);
+    border-color: var(--yellow);
+    font-weight: 600;
+    box-shadow: 0px 0px 8px var(--yellow);
+}
+
+/*======================
+Estilos de Footer
+=======================*/
+footer {
+    background: rgb(100, 98, 98);
+    background: radial-gradient(circle, rgba(100, 98, 98, 1) 0%, rgba(75, 74, 74, 1) 0%, rgba(34, 34, 34, 1) 46%, rgba(0, 0, 0, 1) 100%);
+    border-top: solid 1px var(--yellow);
+}
+
+footer .techFactory {
+    font-size: clamp(2rem, 3vw, 8vw);
+    font-family: 'Roboto Condensed Variable';
+    font-weight: 500;
+}
+
+footer .techFactory .spanTech{
+    color: var(--turquoise);
+}
+footer .techFactory .spanFactory{
+    color: var(--yellow);
+}
+
+
+
+footer .logoUtc{
+
+    width:12em
+}
+
+
+/*======================
+Seccion Sobre Nosotros
+=======================*/
+
+#titulous{
+    color: white;
+}
+
+.sobre-us-container {
+  padding: 20px;
+}
+
+.team-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.team-card {
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.member-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member-card img {
+  margin-bottom: 10px;
+}
+
+  
+  .sobre-us-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .team-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f7f7f7;
+  }
+  
+  .team-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-card p {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-card ul {
+    margin-top: 1rem;
+    text-align: left;
+    color: #374151;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .team-card ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: #4f46e5;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #1d4ed8;
+  }
+  
+/*======================
+Estilos de Seccion de Photos
+=======================*/
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+  
+.photos1 {
+  grid-row: span 3 / span 3;
+}
+
+.photos2 {
+  grid-row: span 2 / span 2;
+}
+
+.photos3 {
+  grid-row: span 2 / span 2;
+}
+
+.photos4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+}
+
+.photos5 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.photos6 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 4;
+}
+
+.photos7 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.photoscard-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.photoscard-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #07a2a4 0%, #eed622 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.photoscard {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.photoscard .img-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #07a2a4 0%, #eed622 100%);
+  transition: scale 0.6s, rotate 0.6s, filter 1s;
+  overflow: hidden;
+}
+
+.photoscard .img-content img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  transition: transform 0.6s, filter 1s; 
+}
+
+.photoscard .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: white;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.photoscard .content .heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.photoscard:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.photoscard:hover .img-content {
+  scale: 2.5;
+  rotate: 30deg;
+  filter: blur(7px);
+}
+
+.photoscard:hover .img-content img {
+  opacity: 0.9;
+}
+
+.video-container {
+  margin-top: 80px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 100%;
+}
+
+/*======================
+Ajustes para móviles
+=======================*/
+@media (max-width: 768px) {
+  .parent {
+      grid-template-columns: repeat(2, 1fr); /* Ajusta la cuadrícula */
+      grid-template-rows: auto;
+  }
+
+  .photoscard .content {
+      padding: 5px; /* Reduce el padding */
+      gap: 5px; /* Menos espacio entre elementos */
+  }
+
+  .photoscard .content .heading {
+      font-size: clamp(14px, 4vw, 18px); /* Tamaño dinámico */
+  }
+
+  .photoscard .content p {
+      font-size: clamp(12px, 3vw, 16px); /* Se adapta a la pantalla */
+      line-height: 1.3;
+  }
+}

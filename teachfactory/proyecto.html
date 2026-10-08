@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Factory Footer</title>
+  <style>
+    /* Reset de márgenes y padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #1c1c1c; /* Fondo oscuro para la página */
+      color: white;
+    }
+
+    /* Estilo del Footer */
+    footer {
+      background: linear-gradient(135deg, #13c9c9, #06ab8d); /* Fondo degradado */
+      padding: 30px;
+      color: #121212;
+      width: 80%; /* El footer estará centrado y con un ancho del 80% */
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+    }
+
+    .footer-image img {
+      max-width: 140px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Efecto cuando el mouse pasa sobre la imagen */
+    .footer-image img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-info {
+      flex: 1;
+      padding-left: 20px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .footer-info h3 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    .footer-info p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #080808;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: rgb(0, 0, 0);
+      font-size: 1.6em;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #34d399; /* Efecto hover color verde */
+    }
+
+    /* Estilo responsivo */
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-image img {
+        max-width: 120px;
+      }
+
+      .footer-info {
+        padding-left: 0;
+        margin-top: 20px;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-image">
+      <img src="Visual Arts Room Safety and Rules Poster in Colorful Bold Images.png" alt="Imagen de Tech Factory">
+    </div>
+    <div class="footer-info">
+      <h3>¿Qué es Tech Factory?</h3>
+      <p>Tech Factory es un proyecto innovador que combina las carreras de Entornos Virtuales, Mecánica y Desarrollo de Software para crear piezas en 3D de manera colaborativa. A través de esta iniciativa interdisciplinaria, estudiantes y profesionales de estas áreas trabajan juntos para diseñar, modelar y fabricar soluciones tecnológicas de vanguardia. Nuestro objetivo es ofrecer una experiencia educativa única donde se integren el diseño y modelado 3D, la ingeniería mecánica y el desarrollo de software, con un fuerte enfoque en la innovación, la creatividad y la sostenibilidad. Teach Factory es el espacio donde las ideas se transforman en realidades tangibles, impulsadas por la tecnología y la colaboración..</p>
+      <div class="social-icons">
+        <a href="#" target="_blank">🔗</a>
+        
+        <a href="#" target="_blank">🌐</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
