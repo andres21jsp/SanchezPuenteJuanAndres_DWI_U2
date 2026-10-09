@@ -23,8 +23,6 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarID">
                     <div className="navbar-nav mx-auto">
                         <a className="nav-link mx-5
-                           " href="#Sobrenosotros">Sobre Nosotros</a>
-                        <a className="nav-link mx-5
                            " href="#">Que es TechFactory</a>
                         <a className='nav-link mx-5' href='#download'>Descargar</a>
                         <a className="nav-link mx-5" href="#">Instrucciones de uso</a>
